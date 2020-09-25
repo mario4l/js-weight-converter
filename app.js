@@ -6,15 +6,17 @@
 function unitCheck() {
   var lbs = document.getElementById("lbs");
   var kg = document.getElementById("kg");
-  // console.log('lbs: ' + lbs);
-  // console.log('kg: ' + kg);
+
+  var weight = document.getElementById("entered-weight");
+
   if (lbs.checked) {
-    console.log('lbs');
+    console.log('Weight in Kg: ' + weight.value);
   }
 
   if (kg.checked) {
-    console.log('kg');
+    console.log('Weight in lbs: ' + weight.value);
   }
+
 }
 
 document.getElementById("main-form").addEventListener("submit", function (e) {
