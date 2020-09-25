@@ -21,6 +21,11 @@ function unitCheck() {
     displayMessage.innerHTML = message;
   }
 
+  // TODO: add fall back to UI
+  if (!lbs.checked || kg.checked) {
+    console.log('Please select (L)lbs or (K)g');
+  }
+
 }
 
 document.getElementById("main-form").addEventListener("submit", function (e) {
