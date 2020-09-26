@@ -1,3 +1,25 @@
 body {
   margin: 0px;
+  background-color: #000000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: white;
+  background-color: #ED1C24;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  padding: 10px;
+}
+
+p {
+  color: white;
+}
+
+#main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
 }
