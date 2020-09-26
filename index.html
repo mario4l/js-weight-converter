@@ -7,18 +7,23 @@
   <title>JS Weight Converter</title>
 
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
 
 
-  <div id="main-container">
+  <div id="main-container" class="ui container">
     <form id="main-form" action="">
       <h1>JS Weight Converter</h1>
-      <input type="radio" id="lbs" name="weight-unit" value="lbs">
-      <label for="lbs">(L)lbs</label>
-      <input type="radio" id="kg" name="weight-unit" value="kg">
-      <label for="kg">(K)g</label><br><br>
+      <div class="inline fields">
+        <input type="radio" id="lbs" class="ui radio checkbox" name="weight-unit" value="lbs" tabindex="0">
+        <label for="lbs">(L)lbs</label>
+        <input type="radio" id="kg" class="ui radio checkbox" name="weight-unit" value="kg" tabindex="0">
+        <label for="kg">(K)g</label><br><br>
+      </div>
 
       <label for="entered-weight">Enter weight:</label>
       <input type="text" id="entered-weight" name="entered-weight" required>
