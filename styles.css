@@ -7,10 +7,14 @@ body {
 
 h1 {
   color: white;
-  background-color: #FF3232;
+  background-color: pink;
   font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
   padding: 10px;
+  border-radius: 12px;
+}
+
+h1 span {
+  font-style: italic;
 }
 
 p {
